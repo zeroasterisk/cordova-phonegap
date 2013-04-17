@@ -50,8 +50,8 @@ To confirm that Cordova Phonegap connects to the device hardware, add this HTML 
 
 First, create a meteor project using the command line utilities found in /phonegap-master/lib/ios/bin:
 ````
-./create ~/Documents/Cordova/MeteorIntegration org.pentasyllabic.MeteorIntegration MeteorIntegration
-./update_cordova_subproject ~/Documents/Cordova/MeteorIntegration/MeteorIntegration.xcodeproj
+./create ~/Documents/Cordova/MyApp org.pentasyllabic.MyApp MyApp
+./update_cordova_subproject ~/Documents/Cordova/MyApp/MyApp.xcodeproj
 ````
 
 Then, you're going to need to edit the CDVViewController.m file, and point the MeteorIntegration App towards your Meteor installation.  If you have a development and production environment, you may need to compile two separate apps, one for each environment.  (Best practice is to add different icons to each app, so you can tell them apart.)

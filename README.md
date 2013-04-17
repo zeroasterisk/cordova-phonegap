@@ -29,3 +29,12 @@ Alternatively, if you'd like to bypass Atmosphere, and install directly from Git
 }
 
 ````
+
+------------------------
+### iOS Build
+
+````
+./create ~/Documents/Cordova/MeteorIntegration org.pentasyllabic.MeteorIntegration MeteorIntegration
+./update_cordova_subproject ~/Documents/Cordova/MeteorIntegration/MeteorIntegration.xcodeproj
+
+````

@@ -8,7 +8,7 @@ http://phonegap.com/
 ------------------------
 ### Meteorite Package Installation
 
-First, install the audio-click package from the command line, like so:
+First, install the cordova-phonegap package from the command line, like so:
 
 ````
 mrt add cordova-phonegap

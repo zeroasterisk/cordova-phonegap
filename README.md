@@ -30,6 +30,13 @@ Alternatively, if you'd like to bypass Atmosphere, and install directly from Git
 
 ````
 
+This will add the cordova libraries and some initialization code.  You'll need to put the following in your main Meteor index.js file (or equivalent).
+
+````
+app.initialize(window);
+````
+
+
 ------------------------
 ### iOS App Build
 
@@ -47,7 +54,3 @@ MeteorIntegration > CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController
 self.wwwFolderName = @"http://192.168.0.123:3000";
 ````
 
-You'll need to put the following in your main Meteor index.js file (or equivalent).
-````
-app.initialize(window);
-````

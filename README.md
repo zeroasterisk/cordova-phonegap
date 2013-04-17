@@ -6,7 +6,7 @@ http://phonegap.com/
 
 
 ------------------------
-### Installation
+### Meteorite Package Installation
 
 First, install the audio-click package from the command line, like so:
 

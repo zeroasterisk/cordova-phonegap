@@ -31,10 +31,19 @@ Alternatively, if you'd like to bypass Atmosphere, and install directly from Git
 ````
 
 ------------------------
-### iOS Build
+### iOS App Build
 
+First, create a meteor project using the command line utilities found in /phonegap-master/lib/ios/bin:
 ````
 ./create ~/Documents/Cordova/MeteorIntegration org.pentasyllabic.MeteorIntegration MeteorIntegration
 ./update_cordova_subproject ~/Documents/Cordova/MeteorIntegration/MeteorIntegration.xcodeproj
 
 ````
+
+Then, you're going to need to edit the following file, and point the MeteorIntegration App towards your Meteor installation.
+MeteorIntegration > CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m
+````
+self.wwwFolderName = @"http://meteorintegration.herokuapp.com";
+````
+
+

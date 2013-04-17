@@ -36,8 +36,7 @@ This will add the cordova libraries and some initialization code.  You'll need t
 app.initialize(window);
 ````
 
-To confirm that Cordova Phonegap connects to the device hardware, you may want to add the following HTML to your app:
-
+To confirm that Cordova Phonegap connects to the device hardware, add this HTML snippet to your app somewhere:
 ````html
  <div id="deviceready" class="blink">
         <p class="event listening">Connecting to Device</p>

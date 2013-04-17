@@ -1,6 +1,6 @@
-
 //-------------------------------------------------------
 // Cordova App Object Literal
+
 
 app = {
     // Application Constructor

@@ -1,8 +1,8 @@
 //-------------------------------------------------------
 // CORDOVOA PHONE GAP
-app.initialize();
 
-var app = {
+
+app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();

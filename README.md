@@ -36,6 +36,8 @@ This will add the cordova libraries and some initialization code.  You'll need t
 app.initialize(window);
 ````
 
+------------------------
+### Document Object Model
 
 To confirm that Cordova Phonegap connects to the device hardware, add this HTML snippet to your app somewhere:
 ````html
@@ -44,6 +46,35 @@ To confirm that Cordova Phonegap connects to the device hardware, add this HTML 
   <p class="event received">Device is Ready</p>
 </div>
 ````
+
+------------------------
+### Controllers & Event Binding
+
+
+````
+// when an app goes into the background
+        document.addEventListener("Pause", function() {
+            Cookie.set('LastPage', Meteor.Router.page());
+        });
+        // when an app drops 'offline'
+        document.addEventListener("offline", function() {
+            if (Meteor.Router.page() != 'offline' && Meteor.Router.page() != 'loading') {
+                Cookie.set('LastPage', Meteor.Router.page());
+                Meteor.Router.to('/offline');
+            }
+        });
+        // when an app comes 'online'
+        document.addEventListener("online", function() {
+            Meteor.resume();
+        });
+````
+
+For more information, take a look at this gist from zeroasterisk for a good example of how to perhaps include routing functionality on pause/reconnection:
+https://gist.github.com/zeroasterisk/5405344
+
+
+
+
 
 ------------------------
 ### iOS App Build

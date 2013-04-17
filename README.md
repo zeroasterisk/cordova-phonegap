@@ -43,7 +43,7 @@ First, create a meteor project using the command line utilities found in /phoneg
 Then, you're going to need to edit the following file, and point the MeteorIntegration App towards your Meteor installation.
 MeteorIntegration > CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m
 ````
-self.wwwFolderName = @"http://meteorintegration.herokuapp.com";
+self.wwwFolderName = @"http://192.168.0.123:3000";
 ````
 
 

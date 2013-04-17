@@ -46,4 +46,7 @@ MeteorIntegration > CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController
 self.wwwFolderName = @"http://192.168.0.123:3000";
 ````
 
-
+You'll need to put the following in your main Meteor index.js file (or equivalent).
+````
+app.initialize(window);
+````
